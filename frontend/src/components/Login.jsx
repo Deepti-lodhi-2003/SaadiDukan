@@ -47,7 +47,7 @@ const LoginPage = () => {
       </a>
 
       <div className="flex flex-col md:flex-row mt-10 w-full max-w-5xl items-center justify-center">
-        {/* Left Section */}
+        {/* Left Section---- */}
         <div
           className="w-full md:w-1/4 h-64 md:h-[55vh] bg-cover bg-center relative"
           style={{
