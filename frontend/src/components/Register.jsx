@@ -165,8 +165,6 @@ const Register = () => {
           </p>
         </div>
       </main>
-
-      
     </div>
   );
 };
