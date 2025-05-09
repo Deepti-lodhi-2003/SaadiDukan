@@ -14,7 +14,7 @@ const HomeSection = () => {
 
   const services = [
     {
-      title: "Makeup Artist",
+      title: "Makeup Artist12",
       img: "https://www.shaadidukaan.com/view/images/cate_images/b/11.webp",
     },
     {
