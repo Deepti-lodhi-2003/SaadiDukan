@@ -14,7 +14,7 @@ const cookieParser = require("cookie-parser");
 
 app.use(morgan("tiny")); 
 app.use(cors({
-  origin: 'http://localhost:5173', 
+  origin: 'http://localhost:5173https://saadi-dukan-62c1.vercel.app', 
   credentials: true, 
 }));
 
