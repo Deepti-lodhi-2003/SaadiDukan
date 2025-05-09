@@ -13,10 +13,22 @@ const morgan = require("morgan");
 const cookieParser = require("cookie-parser"); 
 
 app.use(morgan("tiny")); 
+
 app.use(cors({
-  origin: 'http://localhost:5173https://saadi-dukan-62c1.vercel.app', 
-  credentials: true, 
+  origin: function (origin, callback) {
+    const allowedOrigins = [
+      'http://localhost:5173',
+      'https://saadi-dukan-62c1.vercel.app'
+    ];
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
 }));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); 
