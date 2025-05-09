@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:8080', // Backend URL
+  baseURL: 'https://saadidukan-2.onrender.com', // Backend URL
   headers: {
     'Content-Type': 'application/json',
   },
